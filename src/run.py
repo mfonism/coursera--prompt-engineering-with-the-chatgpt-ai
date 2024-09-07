@@ -1,10 +1,9 @@
 import os
+from openai import OpenAI
 
 from dotenv import load_dotenv
 
 load_dotenv()
 
-# Make sure to have a .env file in the root of the project
-# it should contain the following line:
-# FOO='It works, baby!'
-print(os.getenv("FOO"))
+client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
+print(client.api_key)
