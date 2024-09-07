@@ -14,7 +14,16 @@ messages = [
     },
     {
         "role": "user",
-        "content": "Create a 5-question Python quiz with 4 multiple-choice options for each question. Include the correct answer at the end of each question. The quiz should cover basic (and maybe, intermediate) Python topics like data types, conditionals, loops and functions.",
+        "content": """Create a 5-question Python quiz with 4 multiple-choice options for each question. Include the correct answer at the end of each question. The quiz should cover basic to intermediate Python topics like data types, loops, functions, and error handling.
+
+Example format:
+1. Which of the following data types is immutable in Python?
+a) List
+b) Dictionary
+c) Set
+d) Tuple
+
+Correct answer: d) Tuple""",
     },
 ]
 
