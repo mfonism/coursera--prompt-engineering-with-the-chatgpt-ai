@@ -27,12 +27,11 @@ Correct answer: d) Tuple""",
     },
 ]
 
-response = client.chat.completions.create(
-    model="gpt-4o-mini",
-    messages=messages,
-    max_tokens=1000,
-)
+def get_completions(messages):
+    response = client.chat.completions.create(
+        model="gpt-4o-mini",
+        messages=messages,
+        max_tokens=1000,
+    )
 
-breakpoint()
-
-# print(response.choices[0].message.content)
+    return response.choices[0].message.content
